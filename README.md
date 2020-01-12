@@ -15,4 +15,4 @@ Please clone the repo, and create the following directory structure for data:
 
 `.\data\chongqing1_round1_train1_20191223\images`
 
-Your code should refer to these directory for data.
+Your code should refer to these directory for data. `annotations.json` should be placed under `.\data\chongqing1_round1_train1_20191223`

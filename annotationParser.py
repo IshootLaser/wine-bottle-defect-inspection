@@ -30,8 +30,14 @@ def annoParse(path):
     id_category = {}
     id_bbox = {}
     for i in annotation['annotations']:
-        id_category[i['image_id']] = i['category_id']
-        id_bbox[i['image_id']] = i['bbox']
+        if i['image_id'] in id_category.keys():
+            id_category[i['image_id']] = id_category[i['image_id']] + [i['category_id']]
+        else:
+            id_category[i['image_id']] = [i['category_id']]
+        if i['image_id'] in id_bbox.keys():
+            id_bbox[i['image_id']] = id_bbox[i['image_id']] + [i['bbox']]
+        else:
+            id_bbox[i['image_id']] = [i['bbox']]
     # merge information
     LUT = pd.DataFrame()
     LUT['id'] = sorted(id_name.keys())

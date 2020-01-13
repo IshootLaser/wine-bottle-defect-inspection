@@ -3,6 +3,8 @@ wine bottle defect inspection
 
 This repository is for the [Tianchi Challenge of inspecting wine bottles](https://tianchi.aliyun.com/competition/entrance/231763/information).
 
+The Tencent collaboration document is [here](https://docs.qq.com/doc/DSWh3dUdhVWpEdnZM). Refer to this document for the work that needs to be done.
+
 Please clone the repo, and create the following directory structure for data:
 
 `.\data`
